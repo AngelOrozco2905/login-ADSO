@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login prueba-ADSO</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="background-overlay"></div>
+
+<div class="container" id="container">
+    <!-- Formulario de Registro -->
+    <div class="form-container sign-up">
+    <form id="signup-form">
+        <h2>Crear Cuenta</h2>
+        <input type="text" id="signup-name" placeholder="Nombre completo" required>
+        <input type="email" id="signup-email" placeholder="Correo electrónico" required>
+        <input type="password" id="signup-password" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+    </form>
+    </div>
+
+    <!-- Formulario de Login -->
+    <div class="form-container sign-in">
+    <form id="login-form">
+        <h2>Iniciar Sesión</h2>
+        <input type="email" id="login-email" placeholder="Correo electrónico" required>
+        <input type="password" id="login-password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+    </form>
+    </div>
+
+    <!-- Panel Dinámico de Transición -->
+    <div class="toggle-container">
+    <div class="toggle">
+        <div class="toggle-panel toggle-left">
+        <h2>¿Ya estas registrado?</h2>
+        <p>Para mantenerte conectado, inicia sesión con tus datos</p>
+        <button class="hidden" id="login-btn">Iniciar Sesión</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+        <h2>¿No estas registrado?</h2>
+        <p>Regístrate con tus datos personales para acceder a la plataforma</p>
+        <button class="hidden" id="register-btn">Registrarse</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
